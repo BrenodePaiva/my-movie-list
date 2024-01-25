@@ -1,7 +1,7 @@
 <h1>My movie list</h1>
 
 <p>
-    Essa é uma aplicação responsiva para você fazer uma lista de filmes e séries, e ver 
+    Essa é uma aplicação responsiva para fazer uma lista de filmes e séries, e ver 
     informações sobre eles. Para a listagem deles foi usado a 
     api The Movie Database (TMDB) 
 </p>
