@@ -1,0 +1,5 @@
+export * from './Movies'
+export * from './Series'
+export * from './MyList'
+export * from './Detail'
+export * from './PageNotFound'
