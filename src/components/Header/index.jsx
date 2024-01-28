@@ -36,8 +36,6 @@ function Header() {
     }
   }
 
-  console.log(toggleIcon)
-
   return (
     <Container background={changeBackground} transparent={isTransparent}>
       <img src={logo3} alt="logo-dev-movies" />

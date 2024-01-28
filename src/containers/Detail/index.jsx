@@ -24,11 +24,6 @@ export function Detail() {
   const [movieVideos, setMovieVideos] = useState()
   const [movieDetils, setMovieDetails] = useState()
   const [movieCredit, setMovieCredit] = useState()
-  // const [serieVideos, setSerieVideos] = useState()
-  // const [serieDetails, setSerieDetails] = useState()
-  // const [serieCredit, setSerieCredit] = useState()
-
-  console.log(location.state)
 
   useEffect(() => {
     async function getAllData() {
@@ -97,5 +92,3 @@ export function Detail() {
     </>
   )
 }
-
-// export default Detail
