@@ -34,7 +34,7 @@ export function Series() {
 
   return (
     <Container>
-      <Pagination array={duplicateData(series)} Title="Series" />
+      <Pagination array={duplicateData(series)} title="Séries" />
     </Container>
   )
 }

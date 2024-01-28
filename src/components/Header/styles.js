@@ -29,6 +29,11 @@ export const Container = styled.div`
     display: flex;
     gap: 50px;
     list-style: none;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
   }
 
   .nav_toggle {
@@ -51,7 +56,7 @@ export const Container = styled.div`
       background-color: #0d0d0d;
       box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
       padding: 40px 0 0 10px;
-      transition: 0.4s ease-in-out;
+      transition: 0.5s ease-in-out;
     }
 
     .nav_active {

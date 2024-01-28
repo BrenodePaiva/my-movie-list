@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { NavLink, useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 import logo3 from '../../assets/logo5.png'
 import { Container, Li } from './styles'
@@ -42,17 +42,17 @@ function Header() {
     <Container background={changeBackground} transparent={isTransparent}>
       <img src={logo3} alt="logo-dev-movies" />
       <ul className={navMobile}>
-        <Li isActive={pathname === '/'}>
-          <NavLink to="/">Filmes</NavLink>
-        </Li>
+        <Link to="/">
+          <Li isActive={pathname === '/'}>Filmes</Li>
+        </Link>
 
-        <Li isActive={pathname.includes('series')}>
-          <NavLink to="/series">Séries</NavLink>
-        </Li>
+        <Link to="/series">
+          <Li isActive={pathname.includes('series')}>Séries</Li>
+        </Link>
 
-        <Li isActive={pathname.includes('minha-lista')}>
-          <NavLink to="/minha-lista">Minha Lista</NavLink>
-        </Li>
+        <Link to="/minha-lista">
+          <Li isActive={pathname.includes('minha-lista')}>Minha Lista</Li>
+        </Link>
       </ul>
 
       <div className={toggleIcon} onClick={navToggle}>
