@@ -32,7 +32,7 @@ export function Movies() {
   }, [])
 
   return (
-    <Container>
+    <Container onClick={() => alert('teste')}>
       <Pagination array={duplicateData(movies)} title="Filmes" />
     </Container>
   )

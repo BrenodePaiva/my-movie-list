@@ -2,6 +2,24 @@ import styled from 'styled-components'
 
 import breakPoints from '../../styles/breakPoints'
 
+export const Warp = styled.div`
+  @media ${breakPoints.Xbig} {
+    div {
+      position: fixed;
+      top: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgba(0, 0, 0, 0);
+      z-index: 9;
+      transition: 0.3s ease-in-out;
+    }
+
+    .open {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+`
+
 export const Container = styled.div`
   z-index: 99;
   position: fixed;
@@ -41,8 +59,6 @@ export const Container = styled.div`
   }
 
   @media ${breakPoints.Xbig} {
-    /* height: auto; */
-    /* padding-right: 5px; */
     padding: 20px 5px;
     background-color: #0d0d0d;
 
