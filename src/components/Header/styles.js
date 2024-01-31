@@ -7,14 +7,16 @@ export const Warp = styled.div`
     div {
       position: fixed;
       top: 0;
-      height: 100vh;
-      width: 100vw;
+      height: 0px;
+      width: 0px;
       background-color: rgba(0, 0, 0, 0);
       z-index: 9;
-      transition: 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out;
     }
 
     .open {
+      height: 100vh;
+      width: 100vw;
       background-color: rgba(0, 0, 0, 0.6);
     }
   }
@@ -59,7 +61,7 @@ export const Container = styled.div`
   }
 
   @media ${breakPoints.Xbig} {
-    padding: 20px 5px;
+    padding: 20px 7px;
     background-color: #0d0d0d;
 
     ul {
