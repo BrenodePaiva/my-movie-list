@@ -7,16 +7,17 @@ export const Warp = styled.div`
     div {
       position: fixed;
       top: 0;
-      height: 0px;
-      width: 0px;
+      /* height: 0px; */
+      /* width: 0px; */
+      height: 100vh;
+      width: 100vw;
       background-color: rgba(0, 0, 0, 0);
-      z-index: 9;
-      transition: background-color 0.3s ease-in-out;
+      z-index: -1;
+      transition: 0.3s ease-in-out;
     }
 
     .open {
-      height: 100vh;
-      width: 100vw;
+      z-index: 9;
       background-color: rgba(0, 0, 0, 0.6);
     }
   }
